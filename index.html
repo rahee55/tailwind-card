@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
     <title>TAILWINDCSS PRACTICE</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="/image/exercise.png" type="image/x-icon">
 </head>
 <body class="bg-gradient-to-tl from-purple-800 to-sky-400 h-screen">
     <div class="flex items-center justify-center h-screen">
@@ -13,7 +14,7 @@
                 <img class="h-10 cursor-pointer" src="/image/exercise.png" alt="">
                 <img class="cursor-pointer" src="/7124073_shopping_bag_icon.svg" alt="">
             </div>
-            <img class="w-4/5 pl-14 ml-3  " src="/image/62882.jpg" alt="">
+            <img class="w-4/5 pl-14 ml-3  " src="/image/red.jpg" alt="" id="picChange">
             <div class="pl-6">
                 <h1 class="font-medium text-xl">ADIDAS TECH RC </h1>
                 <p class="font-normal text-[#494b4b] pt-1">
@@ -22,14 +23,14 @@
                 <p>★ ★ ★ ★ ☆</p>
                 <div class="flex justify-between ">
                     <div class="text-xl pt-5 flex">
-                        Colour: <div class="h-[16px]  active:border-[#A31527] rounded-xl ">
-                            <button class="h-[14px] w-[14px] bg-[#A31527] ml-[5px] mt-[10px] rounded-xl"></button>
+                        Colour : <div class="h-[16px]  active:border-[#A31527] rounded-xl ">
+                            <button class="h-[14px] w-[14px] bg-[#A31527] ml-[5px] mt-[10px] rounded-xl"  name="red"  onclick="orangeChange(this)"   ></button>
                         </div>
                         <div class="h-[25px]  active:border-orange-600 rounded-xl">
-                            <button class="h-[14px] w-[14px] bg-orange-600 ml-[5px] mt-[10px] rounded-xl"></button>
+                            <button class="h-[14px] w-[14px] bg-orange-600 ml-[5px] mt-[10px] rounded-xl" name="orange" onclick="orangeChange(this)"></button>
                         </div>
                         <div class="h-[25px]  active:border-pink-500 rounded-xl">
-                            <button class="h-[14px] w-[14px] bg-pink-500 ml-[5px] mt-[10px]  rounded-xl"></button>
+                            <button class="h-[14px] w-[14px] bg-pink-500 ml-[5px] mt-[10px]  rounded-xl"  onclick="orangeChange(this)"  name="pink" ></button>
                         </div>
                     </div>
                     <div class="pr-7 pt-3">
@@ -44,4 +45,5 @@
         </div>
     </div>
 </body>
+<script src="javascript.js"></script>
 </html>
